@@ -76,9 +76,9 @@ int main()
 		    {
 				if (event.mouseButton.button == sf::Mouse::Left && !doneClicking)
 				{
-			    	std::cout << "the left button was pressed" << std::endl;
-			    	std::cout << "mouse x: " << event.mouseButton.x << std::endl;
-			    	std::cout << "mouse y: " << event.mouseButton.y << std::endl;
+			    		std::cout << "the left button was pressed" << std::endl;
+			    		std::cout << "mouse x: " << event.mouseButton.x << std::endl;
+			    		std::cout << "mouse y: " << event.mouseButton.y << std::endl;
 
 					points.push_back(Vector2f(event.mouseButton.x, event.mouseButton.y));
 					verts++;
@@ -122,9 +122,9 @@ int main()
 
 			//window.clear();
 			CircleShape circ(2);
-		    circ.setPosition(Vector2f(pt.x, pt.y));
-		    circ.setFillColor(Color::White);
-		    window.draw(circ);
+		    	circ.setPosition(Vector2f(pt.x, pt.y));
+		    	circ.setFillColor(Color::White);
+		    	window.draw(circ);
 			window.display();
 
 			//cout << "Debug: " << points.size() << endl;
