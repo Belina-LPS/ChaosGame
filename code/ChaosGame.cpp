@@ -39,7 +39,7 @@ int main()
 	sf::Text text;
 	text.setFont(font);
 	if (!font.loadFromFile("Comic Sans MS.ttf"))
-		throw runtime_error("Could not find Font");
+		throw runtime_error("Could not find font");
 
 	text.setString("Left click to add vertices, Right click to run.");
 	text.setCharacterSize(24);
